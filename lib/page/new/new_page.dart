@@ -21,6 +21,12 @@ class NewPageHome extends StatefulWidget {
 }
 
 class _NewPageHomeState extends State<NewPageHome> {
+  
+  var data={
+    res.testContainer:ContainerTest(),
+    res.testImage:ImageTest(),
+  };
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

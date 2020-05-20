@@ -1,12 +1,17 @@
+import 'package:artifact/demo/frame/stream/stream_demo2.dart';
 import 'package:artifact/page/home/home_page.dart';
 import 'package:artifact/res/dimens.dart';
 import 'package:artifact/res/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/screenutil.dart';
 
+import 'demo/frame/stream/stream_demo.dart';
+
 
 final Map<String, WidgetBuilder> routes = {
   HomePage.ROUTER_NAME: (context) => new HomePage(),
+  StreamDemo.ROUTER_NAME: (context) => new StreamDemo(),
+  StreamDemo2.ROUTER_NAME: (context) => new StreamDemo2(),
 };
 
 

@@ -14,7 +14,7 @@ class HomeMenu extends StatelessWidget {
   String title;
   IconData menuIcon;
   
-  HomeMenu(this.homeMenuPosition, this.title,this.menuIcon);
+  HomeMenu(this.homeMenuPosition, this.title, this.menuIcon);
   
   @override
   Widget build(BuildContext context) {
@@ -28,14 +28,17 @@ class HomeMenu extends StatelessWidget {
                     children: <Widget>[
                       Icon(
                         menuIcon,
-                        color: model.current == homeMenuPosition ? AColors.matching_1 : AColors.matching_2,
+                        color: model.current == homeMenuPosition ? AColors
+                            .matching_1 : AColors.matching_2,
                         size: ScreenUtil().setHeight(ADimens.menuImgSize),
                       ),
                       Text(
                         title,
                         style: TextStyle(
-                          fontSize: ScreenUtil().setSp(ADimens.menuTextSize, allowFontScalingSelf: true),
-                          color: model.current == homeMenuPosition ? AColors.matching_1 : AColors.matching_2,
+                          fontSize: ScreenUtil().setSp(
+                              ADimens.menuTextSize, allowFontScalingSelf: true),
+                          color: model.current == homeMenuPosition ? AColors
+                              .matching_1 : AColors.matching_2,
                         ),
                       ),
                     ],
