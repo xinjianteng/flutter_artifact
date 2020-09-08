@@ -1,17 +1,22 @@
+#项目名称，必填
 name: artifact
+
+#项目描述，非必填
+#若需要将项目托管在pub:dev则该字段必填。:
 description: Flutter开发神器
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+#版本号，非必填
 version: 1.0.0+1
+
+# 项目主页，非必填
+# 该项目的介绍主页，填写域名
+homepage: https://xinjianteng.github.io/
+
+# 开发文档位置，非必填
+# 与`homepage`不同，若该项目还包含其他文档，可以将文档的地址添加到该节点下。如果项目托管在pub.dev，该节点显示项目的API信息。
+documentation: https://xinjianteng.github.io
+
+
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -20,16 +25,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
+  flutter_bloc: ^6.0.1
 
   scoped_model: ^1.0.1
   # 屏幕适配
-  flutter_screenutil: ^1.0.2
+  flutter_screenutil: ^2.3.0
+
   flutter_swiper: ^1.1.6
-  rxdart: ^0.18.1
+
+  rxdart: ^0.24.1
+
+  url_launcher: ^5.5.2
 
 dev_dependencies:
   flutter_test:

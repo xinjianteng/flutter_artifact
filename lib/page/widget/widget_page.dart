@@ -1,6 +1,7 @@
 import 'package:artifact/demo/ImageTest.dart';
 import 'package:artifact/page/common/listViewItem.dart';
 import 'package:artifact/page/study/container_page.dart';
+import 'package:artifact/page/study/text_page.dart';
 import 'package:artifact/page/study/webview_page.dart';
 import 'package:artifact/res/strings.dart';
 import 'package:flutter/material.dart';
@@ -32,15 +33,15 @@ class _WidgetPageHomeState extends State<WidgetPageHome> {
             testWidget: WebViewPage(),
           ),
           ListViewItem(
-            testName: Strings.testText,
+            testName: Strings.textStr,
+            testWidget: TextPage(),
+          ),
+          ListViewItem(
+            testName: Strings.containerStr,
             testWidget: ContainerPage(),
           ),
           ListViewItem(
-            testName: Strings.testContainer,
-            testWidget: ContainerPage(),
-          ),
-          ListViewItem(
-            testName: Strings.testImage,
+            testName: Strings.imageStr,
             testWidget: ContainerPage(),
           )
         ],

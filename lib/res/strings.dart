@@ -11,9 +11,9 @@ class Strings {
   static const String widgetIntroUrl = "  https://book.flutterchina.club/chapter3/flutter_widget_intro.html";
 
 
-  static const String testText = "Text";
-  static const String testContainer = "Container";
-  static const String testImage = "Image";
+  static const String textStr = "Text";
+  static const String containerStr = "Container";
+  static const String imageStr = "Image";
   static const String blog = "flutter_bloc";
 
   static const String testImageUrl = "https://gbcloud-book.oss.geebooclub.com/flutter_artifact.png";

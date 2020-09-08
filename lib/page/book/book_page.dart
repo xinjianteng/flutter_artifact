@@ -30,11 +30,11 @@ class _BookPageHomeState extends State<BookPageHome> {
       body: ListView(
         children: <Widget>[
           ListViewItem(
-            testName: Strings.testContainer,
+            testName: Strings.containerStr,
             testWidget: ContainerDemo(),
           ),
           ListViewItem(
-            testName: Strings.testImage,
+            testName: Strings.imageStr,
             testWidget: ImageTest(),
           )
         ],

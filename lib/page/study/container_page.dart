@@ -19,8 +19,9 @@ class ContainerPageHome extends StatefulWidget {
 class _ContainerPageHomeState extends State<ContainerPageHome> {
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Container(
+    return Scaffold(
+      appBar: AppBar(),
+      body: Container(
         //卡片大小
         constraints: BoxConstraints.tightFor(width: 200.0, height: 150.0),
         //容器外补白

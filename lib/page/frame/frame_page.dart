@@ -35,7 +35,7 @@ class _FramePageHomeState extends State<FramePageHome> {
             testWidget: BlocDemo(),
           ),
           ListViewItem(
-            testName: Strings.testImage,
+            testName: Strings.imageStr,
             testWidget: ImageTest(),
           )
         ],
