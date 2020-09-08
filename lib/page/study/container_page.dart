@@ -2,11 +2,23 @@ import 'package:artifact/res/strings.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-///container属性测试用例
-class ContainerTest extends StatelessWidget {
+class ContainerPage extends StatelessWidget {
+  static const String ROUTER_NAME = "/container";
+
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    return ContainerPageHome();
+  }
+}
+
+class ContainerPageHome extends StatefulWidget {
+  @override
+  _ContainerPageHomeState createState() => _ContainerPageHomeState();
+}
+
+class _ContainerPageHomeState extends State<ContainerPageHome> {
+  @override
+  Widget build(BuildContext context) {
     return Center(
       child: Container(
         //卡片大小
@@ -45,8 +57,7 @@ class ContainerTest extends StatelessWidget {
         foregroundDecoration: BoxDecoration(
             image: DecorationImage(
           fit: BoxFit.fill,
-          image:
-              NetworkImage(res.testImageUrl),
+          image: NetworkImage(Strings.testImageUrl),
         )),
       ),
     );

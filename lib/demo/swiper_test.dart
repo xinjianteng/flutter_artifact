@@ -13,8 +13,8 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 //    onIndexChanged  void onIndexChanged(int index)  当用户手动拖拽或者自动播放引起下标改变的时候调用
 //    onTap   void onTap(int index)   当用户点击某个轮播的时候调用
 //    duration    300.0   动画时间，单位是毫秒
-//    pagination  null    设置 new SwiperPagination() 展示默认分页指示器
-//    control     null    设置 new SwiperControl() 展示默认分页按钮
+//    pagination  null    设置 widget SwiperPagination() 展示默认分页指示器
+//    control     null    设置 widget SwiperControl() 展示默认分页按钮
 //
 //    分页指示器
 //    分页指示器继承自 SwiperPlugin,SwiperPlugin 为 Swiper 提供额外的界面.设置为new SwiperPagination() 展示默认分页.
@@ -25,7 +25,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 //
 //
 //    控制按钮
-//    控制按钮组件也是继承自 SwiperPlugin,设置 new SwiperControl() 展示默认控制按钮.
+//    控制按钮组件也是继承自 SwiperPlugin,设置 widget SwiperControl() 展示默认控制按钮.
 //    参数  默认值     描述
 //    iconPrevious    Icons.arrow_back_ios    上一页的IconData
 //    iconNext    Icons.arrow_forward_ios     下一页的IconData
@@ -35,7 +35,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 //
 //
 //    控制器(SwiperController)
-//    SwiperController 用于控制 Swiper的index属性, 停止和开始自动播放. 通过 new SwiperController() 创建一个SwiperController实例，并保存，以便将来能使用。
+//    SwiperController 用于控制 Swiper的index属性, 停止和开始自动播放. 通过 widget SwiperController() 创建一个SwiperController实例，并保存，以便将来能使用。
 //    方法  描述
 //    void move(int index, {bool animation: true})    移动到指定下标，设置是否播放动画
 //    void next({bool animation: true})   下一页

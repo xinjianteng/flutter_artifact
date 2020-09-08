@@ -1,9 +1,10 @@
+import 'package:artifact/page/book/book_page.dart';
+import 'package:artifact/page/frame/frame_page.dart';
 import 'package:artifact/page/home/widge/home_menu.dart';
+import 'package:artifact/page/widget/widget_page.dart';
 import 'package:artifact/res/strings.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'package:artifact/page/new/new_page.dart';
-
 
 class HomePage extends StatelessWidget {
   static const String ROUTER_NAME = "/HomePage";
@@ -22,9 +23,14 @@ class HomePageHome extends StatefulWidget {
 class _HomePageHomeState extends State<HomePageHome> {
   //点击导航项是要显示的页面
   final pages = [
-    NewPage(),
-    NewPage(),
+    WidgetPage(),
+    FramePage(),
+    BookPage(),
   ];
+
+  static const int HOME_WIDGET = 0;
+  static const int HOME_FRAME = 1;
+  static const int HOME_BOOK = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -41,16 +47,9 @@ class _HomePageHomeState extends State<HomePageHome> {
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
-                HomeMenu(
-                  0,
-                  res.menuWidget,
-                  Icons.widgets
-                ),
-                HomeMenu(
-                  1,
-                  res.menuWidget,
-                  Icons.widgets
-                ),
+                HomeMenu(HOME_WIDGET, Strings.menuWidget, Icons.widgets),
+                HomeMenu(HOME_FRAME, Strings.menuLibrary, Icons.filter_frames),
+                HomeMenu(HOME_BOOK, Strings.menuBook, Icons.book),
               ],
             ),
           ),

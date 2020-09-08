@@ -15,7 +15,7 @@ class FloatingActionButtonTest extends StatelessWidget {
       //前景色：白色
       foregroundColor: Colors.white,
       //背景色：淡绿色
-      backgroundColor: AColors.matching_1,
+      backgroundColor: AColors.menu_select,
       //唯一request  点击回调事件。弹出一句提示语。
       onPressed: () {
         Scaffold.of(context).showSnackBar(new SnackBar(content: Text('搜索')));

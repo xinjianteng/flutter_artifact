@@ -1,10 +1,6 @@
-import 'package:artifact/res/strings.dart';
 import 'package:flutter/material.dart';
 
 class ImageTest extends StatelessWidget {
-
-
-  final  double size=150.0;
 
   @override
   Widget build(BuildContext context) {
@@ -18,10 +14,10 @@ class ImageTest extends StatelessWidget {
               Text('加载网络图片 宽=120；高=120； fix:BoxFix.none(原始大小)'),
               Image(
                 image: NetworkImage(
-                  res.testImageMinUrl,
+                  "http://pvc0fusij.bkt.clouddn.com/Tin_Flutter.png",
                 ),
-                width:size,
-                height:size,
+                width:150.0,
+                height:150.0,
                 fit: BoxFit.none,
               ),
             ],
@@ -33,10 +29,10 @@ class ImageTest extends StatelessWidget {
               Text('加载网络图片 宽=120；高=120； fix:BoxFix.none(原始大小)'),
               Image(
                 image: NetworkImage(
-                  res.testImageMinUrl,
+                  "http://pvc0fusij.bkt.clouddn.com/Tin_Flutter.png",
                 ),
-                width:size,
-                height:size,
+                width:150.0,
+                height:150.0,
                 fit: BoxFit.contain,
               ),
             ],
@@ -48,10 +44,10 @@ class ImageTest extends StatelessWidget {
               Text('加载网络图片 宽=120；高=120； fix:BoxFix.none(原始大小)'),
               Image(
                 image: NetworkImage(
-                  res.testImageMinUrl,
+                  "http://pvc0fusij.bkt.clouddn.com/Tin_Flutter.png",
                 ),
-                width:size,
-                height:size,
+                width:150.0,
+                height:150.0,
                 fit: BoxFit.contain,
               ),
             ],

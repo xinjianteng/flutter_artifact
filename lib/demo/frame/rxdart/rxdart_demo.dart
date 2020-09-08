@@ -23,17 +23,10 @@ class RxDartDemoHome extends StatefulWidget {
 class _RxDartDemoHomeState extends State<RxDartDemoHome> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
 
-    Observable<String> _observable =
-//        Observable(Stream.fromIterable(['Stream.fromIterable', 'Stream.fromIterable']));
-//        Observable.fromFuture(Future.value("Observable.fromFuture"));
-//        Observable.fromIterable(['Observable.fromIterable11', 'Observable.fromIterable22']);
-//        Observable.just('observable.just');
-        Observable.periodic(Duration(seconds: 3), (x) => x.toString());
+    PublishSubject<String> _subject = PublishSubject<String>();
 
-    _observable.listen(print);
   }
 
   @override
